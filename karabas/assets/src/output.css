@@ -602,6 +602,12 @@ body {
   }
 }
 
+@media (min-width: 320px) {
+  .container {
+    max-width: 320px;
+  }
+}
+
 @media (min-width: 480px) {
   .container {
     max-width: 480px;
@@ -987,6 +993,10 @@ body {
   width: max-content;
 }
 
+.min-w-4 {
+  min-width: 1rem;
+}
+
 .min-w-\[50px\] {
   min-width: 50px;
 }
@@ -1328,11 +1338,6 @@ body {
   text-align: end;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -1489,6 +1494,32 @@ html {
     }
   }
 
+  @media (min-width: 320px) {
+    .min-\[1420px\]\:container {
+      max-width: 320px;
+    }
+  }
+
+  .min-\[1420px\]\:container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  @media (min-width: 250px) {
+    .min-\[1420px\]\:container {
+      max-width: 250px;
+    }
+  }
+
+  @media (min-width: 320px) {
+    .min-\[1420px\]\:container {
+      max-width: 320px;
+    }
+  }
+
   @media (min-width: 480px) {
     .min-\[1420px\]\:container {
       max-width: 480px;
@@ -1506,6 +1537,12 @@ html {
   @media (min-width: 250px) {
     .min-\[1420px\]\:container {
       max-width: 250px;
+    }
+  }
+
+  @media (min-width: 320px) {
+    .min-\[1420px\]\:container {
+      max-width: 320px;
     }
   }
 
@@ -1532,6 +1569,12 @@ html {
   @media (min-width: 250px) {
     .min-\[1420px\]\:container {
       max-width: 250px;
+    }
+  }
+
+  @media (min-width: 320px) {
+    .min-\[1420px\]\:container {
+      max-width: 320px;
     }
   }
 
@@ -1564,6 +1607,12 @@ html {
   @media (min-width: 250px) {
     .min-\[1420px\]\:container {
       max-width: 250px;
+    }
+  }
+
+  @media (min-width: 320px) {
+    .min-\[1420px\]\:container {
+      max-width: 320px;
     }
   }
 
@@ -1602,6 +1651,12 @@ html {
   @media (min-width: 250px) {
     .min-\[1420px\]\:container {
       max-width: 250px;
+    }
+  }
+
+  @media (min-width: 320px) {
+    .min-\[1420px\]\:container {
+      max-width: 320px;
     }
   }
 
@@ -1748,6 +1803,10 @@ html {
     height: 120px;
   }
 
+  .sm\:h-\[23px\] {
+    height: 23px;
+  }
+
   .sm\:h-\[30px\] {
     height: 30px;
   }
@@ -1782,6 +1841,10 @@ html {
 
   .sm\:w-\[140px\] {
     width: 140px;
+  }
+
+  .sm\:w-\[20px\] {
+    width: 20px;
   }
 
   .sm\:w-\[27px\] {
@@ -1849,6 +1912,10 @@ html {
     border-radius: 1rem;
   }
 
+  .sm\:rounded-3xl {
+    border-radius: 1.5rem;
+  }
+
   .sm\:rounded-lg {
     border-radius: var(--radius);
   }
@@ -1859,6 +1926,10 @@ html {
 
   .sm\:bg-secondary {
     background-color: hsl(var(--secondary));
+  }
+
+  .sm\:fill-secondary {
+    fill: hsl(var(--secondary));
   }
 
   .sm\:px-0 {
@@ -1907,6 +1978,11 @@ html {
     text-align: start;
   }
 
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .sm\:text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -1937,6 +2013,10 @@ html {
 
   .sm\:text-muted {
     color: hsl(var(--muted));
+  }
+
+  .sm\:text-secondary {
+    color: hsl(var(--secondary));
   }
 
   .min-\[250px\]\:mr-2 {
@@ -2020,6 +2100,10 @@ html {
     height: 100px;
   }
 
+  .xs\:h-\[30px\] {
+    height: 30px;
+  }
+
   .xs\:max-h-\[100px\] {
     max-height: 100px;
   }
@@ -2034,6 +2118,10 @@ html {
 
   .xs\:w-3\/4 {
     width: 75%;
+  }
+
+  .xs\:w-\[27px\] {
+    width: 27px;
   }
 
   .xs\:min-w-\[200px\] {
@@ -2056,20 +2144,6 @@ html {
     max-width: 430px;
   }
 
-  .xs\:rounded-3xl {
-    border-radius: 1.5rem;
-  }
-
-  .xs\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
-  .xs\:py-0 {
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-
   .xs\:pl-\[20px\] {
     padding-left: 20px;
   }
@@ -2077,6 +2151,16 @@ html {
   .xs\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .xs\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .xs\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .xs\:text-secondary {
@@ -2356,6 +2440,15 @@ html {
     background-color: transparent;
   }
 
+  .md\:fill-background {
+    fill: hsl(var(--background));
+  }
+
+  .md\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .md\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -2374,6 +2467,11 @@ html {
   .md\:px-\[20px\] {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .md\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   .md\:py-3 {
@@ -2433,6 +2531,11 @@ html {
   .md\:text-secondary {
     color: hsl(var(--secondary));
   }
+
+  .md\:text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
 }
 
 @media (min-width: 1024px) {
@@ -2446,6 +2549,10 @@ html {
 
   .lg\:mt-3 {
     margin-top: 0.75rem;
+  }
+
+  .lg\:block {
+    display: block;
   }
 
   .lg\:h-14 {
