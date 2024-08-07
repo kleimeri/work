@@ -3,7 +3,7 @@
 module.exports = {
   content: [
     './completed_components/**/*.html',
-    './completed_components/**/*.html',
+    './completed_components/*.html',
     './completed_components/product-pages/*.html',
     './completed_components/home-pages/*.html',
     './completed_components/catalog-pages/*.html',
