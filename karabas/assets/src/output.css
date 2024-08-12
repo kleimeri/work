@@ -674,6 +674,10 @@ body {
   grid-column: span 2 / span 2;
 }
 
+.col-span-3 {
+  grid-column: span 3 / span 3;
+}
+
 .col-span-4 {
   grid-column: span 4 / span 4;
 }
@@ -732,6 +736,10 @@ body {
 .my-\[20px\] {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
 }
 
 .mb-\[10px\] {
@@ -802,6 +810,10 @@ body {
   margin-top: 20px;
 }
 
+.mt-auto {
+  margin-top: auto;
+}
+
 .block {
   display: block;
 }
@@ -834,8 +846,16 @@ body {
   height: 1rem;
 }
 
+.h-44 {
+  height: 11rem;
+}
+
 .h-5 {
   height: 1.25rem;
+}
+
+.h-6 {
+  height: 1.5rem;
 }
 
 .h-8 {
@@ -852,6 +872,10 @@ body {
 
 .h-\[15px\] {
   height: 15px;
+}
+
+.h-\[300px\] {
+  height: 300px;
 }
 
 .h-\[37px\] {
@@ -916,8 +940,16 @@ body {
   width: 1rem;
 }
 
+.w-44 {
+  width: 11rem;
+}
+
 .w-5 {
   width: 1.25rem;
+}
+
+.w-6 {
+  width: 1.5rem;
 }
 
 .w-8 {
@@ -1017,6 +1049,10 @@ body {
 
 .max-w-\[200px\] {
   max-width: 200px;
+}
+
+.max-w-\[400px\] {
+  max-width: 400px;
 }
 
 .max-w-\[450px\] {
@@ -1128,16 +1164,16 @@ body {
   border-radius: 1.5rem;
 }
 
-.rounded-\[20px\] {
-  border-radius: 20px;
-}
-
 .rounded-full {
   border-radius: 9999px;
 }
 
 .rounded-lg {
   border-radius: var(--radius);
+}
+
+.rounded-sm {
+  border-radius: calc(var(--radius) - 4px);
 }
 
 .rounded-xl {
@@ -1184,6 +1220,10 @@ body {
   background-color: hsl(var(--destructive));
 }
 
+.bg-input {
+  background-color: hsl(var(--input));
+}
+
 .bg-muted {
   background-color: hsl(var(--muted));
 }
@@ -1217,6 +1257,10 @@ body {
 
 .fill-white {
   fill: #fff;
+}
+
+.p-0\.5 {
+  padding: 0.125rem;
 }
 
 .p-2 {
@@ -1266,9 +1310,9 @@ body {
   padding-right: 1.25rem;
 }
 
-.px-\[15px\] {
-  padding-left: 15px;
-  padding-right: 15px;
+.px-\[10px\] {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .px-\[20px\] {
@@ -1294,11 +1338,6 @@ body {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-
-.py-\[5px\] {
-  padding-top: 5px;
-  padding-bottom: 5px;
 }
 
 .pl-3 {
@@ -1338,6 +1377,11 @@ body {
   line-height: 2.5rem;
 }
 
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
@@ -1355,6 +1399,11 @@ body {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-xl {
@@ -1702,10 +1751,6 @@ html {
 
 .active\:bg-primary:active {
   background-color: hsl(var(--primary));
-}
-
-.active\:bg-secondary-foreground:active {
-  background-color: hsl(var(--secondary-foreground));
 }
 
 .active\:text-white:active {
@@ -2961,9 +3006,9 @@ html {
     grid-template-columns: repeat(10, minmax(0, 1fr));
   }
 
-  .\32xl\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+  .\32xl\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .\32xl\:text-base {

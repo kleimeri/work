@@ -3,10 +3,11 @@
 // npx tailwindcss -i ./assets/src/input.css -o ./assets/src/output.css --watch
 module.exports = {
   content: [
-    './completed_components/*.html',
-    './completed_components/product-pages/product-page.html',
+    './completed_components/product-pages/*.html',
     './completed_components/home-pages/*.html',
     './completed_components/catalog-pages/*.html',
+    './completed_components/busket-page/*.html',
+    './completed_components/busket-page/popup-busket/*.html',
     './completed_components/**/*.html',
   ],
   theme: {
