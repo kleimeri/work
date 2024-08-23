@@ -15,28 +15,6 @@ module.exports = {
       center: true,
       padding: "1rem",
     },
-    screens: {
-      'sm': '250px',
-      // => @media (min-width: 250px) { ... }
-
-      'smx': '320px',
-      // => @media (min-width: 250px) { ... }
-
-      'xs': '480px',
-      // => @media (min-width: 480px) { ... }
-
-      'md': '768px',
-      // => @media (min-width: 768px) { ... }
-
-      'lg': '1024px',
-      // => @media (min-width: 1024px) { ... }
-
-      'xl': '1280px',
-      // => @media (min-width: 1280px) { ... }
-
-      '2xl': '1780px',
-      // => @media (min-width: 1780px) { ... }
-    },
     extend: {
       colors: {
         border: "hsl(var(--border))",
