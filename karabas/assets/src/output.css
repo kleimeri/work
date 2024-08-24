@@ -682,14 +682,14 @@ body {
   margin: 0.75rem;
 }
 
+.mx-0\.5 {
+  margin-left: 0.125rem;
+  margin-right: 0.125rem;
+}
+
 .mx-1 {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
-}
-
-.mx-10 {
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
 }
 
 .mx-3 {
@@ -700,6 +700,11 @@ body {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.mx-px {
+  margin-left: 1px;
+  margin-right: 1px;
 }
 
 .my-0 {
@@ -740,12 +745,24 @@ body {
   margin-bottom: 0.5rem;
 }
 
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
 .mb-\[10px\] {
   margin-bottom: 10px;
 }
 
 .mb-\[5px\] {
   margin-bottom: 5px;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.ml-5 {
+  margin-left: 1.25rem;
 }
 
 .ml-\[3px\] {
@@ -776,6 +793,10 @@ body {
   margin-right: 20px;
 }
 
+.mt-0 {
+  margin-top: 0px;
+}
+
 .mt-1 {
   margin-top: 0.25rem;
 }
@@ -802,6 +823,10 @@ body {
 
 .mt-5 {
   margin-top: 1.25rem;
+}
+
+.mt-7 {
+  margin-top: 1.75rem;
 }
 
 .mt-\[100px\] {
@@ -852,10 +877,6 @@ body {
   height: 2rem;
 }
 
-.h-96 {
-  height: 24rem;
-}
-
 .h-\[100px\] {
   height: 100px;
 }
@@ -870,6 +891,10 @@ body {
 
 .h-\[15px\] {
   height: 15px;
+}
+
+.h-\[23px\] {
+  height: 23px;
 }
 
 .h-\[37px\] {
@@ -954,6 +979,10 @@ body {
   width: 10px;
 }
 
+.w-\[150px\] {
+  width: 150px;
+}
+
 .w-\[18px\] {
   width: 18px;
 }
@@ -974,6 +1003,10 @@ body {
   width: 250px;
 }
 
+.w-\[28px\] {
+  width: 28px;
+}
+
 .w-\[32px\] {
   width: 32px;
 }
@@ -992,6 +1025,10 @@ body {
 
 .w-\[50px\] {
   width: 50px;
+}
+
+.w-\[52px\] {
+  width: 52px;
 }
 
 .w-\[78\%\] {
@@ -1045,6 +1082,10 @@ body {
   max-width: 150px;
 }
 
+.max-w-\[170px\] {
+  max-width: 170px;
+}
+
 .max-w-\[200px\] {
   max-width: 200px;
 }
@@ -1059,6 +1100,11 @@ body {
 
 .max-w-full {
   max-width: 100%;
+}
+
+.max-w-max {
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 
 .max-w-min {
@@ -1331,12 +1377,20 @@ body {
   padding-bottom: 0.75rem;
 }
 
+.pl-2 {
+  padding-left: 0.5rem;
+}
+
 .pl-3 {
   padding-left: 0.75rem;
 }
 
 .pr-16 {
   padding-right: 4rem;
+}
+
+.pr-2 {
+  padding-right: 0.5rem;
 }
 
 .pr-3 {
@@ -1613,6 +1667,11 @@ html {
       max-width: 1536px;
     }
   }
+}
+
+.first\:mx-2:first-child {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .hover\:border-primary:hover {
@@ -1957,6 +2016,10 @@ html {
 }
 
 @media (min-width: 768px) {
+  .md\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
   .md\:col-span-2 {
     grid-column: span 2 / span 2;
   }
@@ -2021,12 +2084,28 @@ html {
     height: 1rem;
   }
 
+  .md\:h-\[13px\] {
+    height: 13px;
+  }
+
   .md\:h-\[180px\] {
     height: 180px;
   }
 
   .md\:h-\[220px\] {
     height: 220px;
+  }
+
+  .md\:h-\[23px\] {
+    height: 23px;
+  }
+
+  .md\:h-\[33px\] {
+    height: 33px;
+  }
+
+  .md\:h-\[43px\] {
+    height: 43px;
   }
 
   .md\:max-h-\[130px\] {
@@ -2066,12 +2145,44 @@ html {
     width: 1rem;
   }
 
+  .md\:w-48 {
+    width: 12rem;
+  }
+
   .md\:w-\[150px\] {
     width: 150px;
   }
 
+  .md\:w-\[200px\] {
+    width: 200px;
+  }
+
   .md\:w-\[260px\] {
     width: 260px;
+  }
+
+  .md\:w-\[28px\] {
+    width: 28px;
+  }
+
+  .md\:w-\[42px\] {
+    width: 42px;
+  }
+
+  .md\:w-\[48px\] {
+    width: 48px;
+  }
+
+  .md\:w-\[52px\] {
+    width: 52px;
+  }
+
+  .md\:w-\[62px\] {
+    width: 62px;
+  }
+
+  .md\:w-\[72px\] {
+    width: 72px;
   }
 
   .md\:w-\[90px\] {
@@ -2080,6 +2191,10 @@ html {
 
   .md\:w-\[95\%\] {
     width: 95%;
+  }
+
+  .md\:w-full {
+    width: 100%;
   }
 
   .md\:w-max {
@@ -2115,6 +2230,10 @@ html {
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .md\:grid-cols-8 {
     grid-template-columns: repeat(8, minmax(0, 1fr));
   }
@@ -2125,6 +2244,10 @@ html {
 
   .md\:justify-center {
     justify-content: center;
+  }
+
+  .md\:justify-around {
+    justify-content: space-around;
   }
 
   .md\:gap-x-0 {
@@ -2152,6 +2275,11 @@ html {
   .md\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .md\:px-1 {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
   }
 
   .md\:px-10 {
@@ -2493,10 +2621,6 @@ html {
     grid-column: span 9 / span 9;
   }
 
-  .xl\:-ml-0 {
-    margin-left: -0px;
-  }
-
   .xl\:-ml-10 {
     margin-left: -2.5rem;
   }
@@ -2507,6 +2631,10 @@ html {
 
   .xl\:ml-\[30px\] {
     margin-left: 30px;
+  }
+
+  .xl\:mt-0 {
+    margin-top: 0px;
   }
 
   .xl\:mt-12 {
@@ -2564,6 +2692,10 @@ html {
 
   .xl\:max-w-\[200px\] {
     max-width: 200px;
+  }
+
+  .xl\:max-w-\[250px\] {
+    max-width: 250px;
   }
 
   .xl\:grid-cols-12 {
