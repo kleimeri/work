@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang='en'>
+      <head>
+        <meta charset='UTF-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
+        <link rel='stylesheet' href='../assets/css/style.css'>
+        <link rel="stylesheet" href="../assets/src/output.css">
+          <title>Document</title>
+        </head>
+  <body>
+    <div class="wrapper container h-max mx-auto px-0 flex justify-center items-center flex-wrap ">
+      
+      
+      <!-- popup -->
+      <div class=" h-max rounded-3xl mt-[20px] flex justify-center items-center shadow-2xl min-[250px]:min-w-[290px] min-[480px]:min-w-[430px] md:min-w-[500px]">
+        <div class="w-full h-full px-4 py-1">
+          <div class="w-full h-max flex justify-end items-center">
+
+            <div class="w-full h-max text-center min-[250px]:text-xl min-[480px]:text-3xl 2xl:text-3xl">Корзина</div>
+
+            <a class="p-3" href="#closePopup">
+              <button id="closeBasketPopup">
+                <svg width="15" height="15" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.6" d="M2.00005 2L17 17M17 2L2 16.9999" stroke="#292929" stroke-width="4" stroke-linecap="round"/>
+                </svg>
+              </button>
+            </a>
+
+          </div>
+
+          <div class="w-full 2xl:mt-3 min-[250px]:max-h-[220px] min-[480px]:max-h-[290px] xl:max-h-[366px] overflow-y-scroll ">
+
+            <div class="max-w-full first:mt-0 mt-2 mr-2 bg-accent min-[250px]:px-[3px] min-[250px]:py-[3px] min-[480px]:px-[10px] min-[480px]:py-[10px] md:px-[20px] md:py-[10px] min-[250px]:rounded-lg xl:rounded-3xl min-[250px]:min-h-[90px] min-[480px]:min-h-[120px] xl:max-h-[158px]">
+              <div class="max-w-full max-h-full bg-black"></div>
+            </div>
+            <div class="max-w-full first:mt-0 mt-2 mr-2 bg-accent min-[250px]:px-[3px] min-[250px]:py-[3px] min-[480px]:px-[10px] min-[480px]:py-[10px] md:px-[20px] md:py-[10px] min-[250px]:rounded-lg xl:rounded-3xl min-[250px]:min-h-[90px] min-[480px]:min-h-[120px] xl:max-h-[158px]">
+              <div class="max-w-full max-h-full bg-black"></div>
+            </div>
+            <div class="max-w-full first:mt-0 mt-2 mr-2 bg-accent min-[250px]:px-[3px] min-[250px]:py-[3px] min-[480px]:px-[10px] min-[480px]:py-[10px] md:px-[20px] md:py-[10px] min-[250px]:rounded-lg xl:rounded-3xl min-[250px]:min-h-[90px] min-[480px]:min-h-[120px] xl:max-h-[158px]">
+              <div class="max-w-full max-h-full bg-black"></div>
+            </div>
+            <div class="max-w-full first:mt-0 mt-2 mr-2 bg-accent min-[250px]:px-[3px] min-[250px]:py-[3px] min-[480px]:px-[10px] min-[480px]:py-[5px] md:px-[10px] md:py-[5px] min-[250px]:rounded-lg xl:rounded-3xl min-[250px]:min-h-[90px] min-[480px]:min-h-[120px] xl:max-h-[158px]">
+              <div class="max-w-full max-h-full bg-black"></div>
+            </div>
+
+
+          </div>
+
+          <div class="w-full my-1">
+            <div class="flex justify-between">
+              <div>
+                <div class="flex items-center min-[250px]:text-xs min-[480px]:text-base ">
+                  <p class="min-[250px]:mr-2 min-[480px]:mr-4">Всего:</p>
+                  <span class="mr-1 font-bold">123</span>
+                  <p class="font-bold">товаров</p>
+                </div>
+                <div class="flex items-center min-[250px]:text-base min-[480px]:text-xl md:text-2xl">
+                  <p class="min-[250px]:mr-2 min-[480px]:mr-4">Итого:</p>
+                  <span class="mr-1 font-bold ">123</span>
+                  <div class="min-[250px]:scale-[0.5] min-[480px]:scale-[0.7]">
+                    <svg width="17" height="24" viewBox="0 0 17 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.79219 0.5H1.31211V11.1352H0.162109V14.5852H1.31211V16.1211H0.162109V19.5711H1.31211V23.5H4.76211V19.5711H9.07461V16.1211H4.76211V14.5875H9.79314C13.6774 14.5875 16.8371 11.4277 16.8371 7.54397C16.8371 3.65976 13.6773 0.5 9.79219 0.5ZM9.79358 11.1375H4.76211V11.1352V3.94955H9.79358C11.7753 3.94955 13.3876 5.56184 13.3876 7.54353C13.3876 9.52521 11.7753 11.1375 9.79358 11.1375Z" fill="#292929"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="min-[250px]:text-[8px] min-[480px]:text-base 2xl:text-base">
+                <a href="#deleteItem">
+                  <button id="deleteItem" class="flex items-center">
+                    <div class="min-[250px]:scale-[0.5] min-[480px]:scale-[0.9] min-[480px]:mr-1 2xl:scale-[1.1] 2xl:mr-2">
+                      <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.9918 3.0175L10.6938 2.124C10.5803 1.7837 10.2629 1.55505 9.90429 1.55505H7.3991V0.739414C7.3991 0.331753 7.06766 0 6.6601 0H4.36595C3.95849 0 3.62695 0.331753 3.62695 0.739414V1.55505H1.12186C0.763118 1.55505 0.445785 1.7837 0.332282 2.124L0.0342095 3.0175C-0.0336655 3.22092 0.000735487 3.44617 0.126083 3.62013C0.25143 3.79409 0.45423 3.89802 0.66867 3.89802H0.980235L1.66599 12.3778C1.71697 13.0071 2.25091 13.5 2.88176 13.5H8.28343C8.91418 13.5 9.44822 13.0071 9.4991 12.3777L10.1849 3.89802H10.3574C10.5718 3.89802 10.7746 3.79409 10.9 3.62024C11.0253 3.44627 11.0597 3.22092 10.9918 3.0175ZM4.41796 0.791016H6.60809V1.55505H4.41796V0.791016ZM8.71066 12.314C8.69274 12.5355 8.50508 12.709 8.28343 12.709H2.88176C2.66011 12.709 2.47245 12.5355 2.45453 12.314L1.77383 3.89802H9.39127L8.71066 12.314ZM0.838306 3.107L1.08272 2.37428C1.08828 2.35739 1.10404 2.34606 1.12186 2.34606H9.90429C9.92211 2.34606 9.93777 2.35739 9.94343 2.37428L10.1878 3.107H0.838306Z" fill="#E00000"/>
+                        <path d="M7.44915 12.2859C7.45616 12.2863 7.46306 12.2864 7.47006 12.2864C7.67904 12.2864 7.85373 12.1227 7.86464 11.9115L8.23605 4.78189C8.24738 4.56374 8.0797 4.37762 7.86166 4.36629C7.64299 4.35465 7.4575 4.52254 7.44606 4.74069L7.07476 11.8703C7.06343 12.0885 7.23101 12.2746 7.44915 12.2859Z" fill="#E00000"/>
+                        <path d="M3.18052 11.9124C3.19206 12.1232 3.36654 12.2864 3.57511 12.2864C3.58231 12.2864 3.58973 12.2862 3.59704 12.2858C3.81509 12.2739 3.98225 12.0875 3.97041 11.8693L3.58139 4.73969C3.56954 4.52154 3.38312 4.35438 3.16497 4.36633C2.94693 4.37817 2.77976 4.56459 2.79161 4.78274L3.18052 11.9124Z" fill="#E00000"/>
+                        <path d="M5.51855 12.2864C5.73701 12.2864 5.91406 12.1093 5.91406 11.8909V4.76123C5.91406 4.54277 5.73701 4.36572 5.51855 4.36572C5.3001 4.36572 5.12305 4.54277 5.12305 4.76123V11.8909C5.12305 12.1093 5.3001 12.2864 5.51855 12.2864Z" fill="#E00000"/>
+                      </svg>
+                    </div>
+                    <div class="text-ring">Очистить корзину</div>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <a href="#buyItems" class="active:scale-95 bg-secondary transition-[0.1s] w-full min-[250px]:h-[40px] md:h-[65px] xl:h-[60px] min-[250px]:mt-3 md:mt-5 flex justify-center items-center  min-[250px]:rounded-[5px] md:rounded-[10px] ">
+              <button id="buyItems" class="text-white font-bold text-center min-[250px]:text-base min-[480px]:text-xl  ">
+                Перейти в корзину
+              </button>  
+            </a>
+            <div class="w-full xl:h-[75px] mt-1 flex justify-between items-center">
+              <p class="min-[250px]:w-[100px] min-[480px]:w-[150px] xl:w-[200px] min-[250px]:text-[8px] min-[480px]:text-sm ">
+                Отдел по работе с
+                юридическими лицами:
+              </p>  
+              
+              <a href="mailto:info@karabas.ru" class="font-bold text-center min-[250px]:text-base min-[480px]:text-xl xl:text-2xl ">
+                <button id="clickToMail">
+                  info@karabas.ru
+                </button>
+              </a> 
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- end popup -->
+
+
+   
+    </div>
+  </body>
+</html>
