@@ -9,7 +9,7 @@
           <title>basket</title>
         </head>
   <body>  
-    <div class="2xl:w-[1440px] xl:container h-max mx-auto ">
+    <div class="container h-max mx-auto ">
       
       <div class="w-full grid grid-cols-12 gap-x-5 px-2 md:px-5 ">
 
@@ -149,7 +149,7 @@
           </div>
 
           <!-- Доставка г. Казань, Декабристов 20-->
-          <a href="#" class="lg:flex xl:hidden h-max mt-5 p-3.5 flex justify-between bg-secondary rounded-2xl shadow-lgrounded-2xl shadow-lg ">
+          <button id="btn" class="lg:flex xl:hidden w-full h-max mt-5 p-3.5 flex justify-between bg-secondary rounded-2xl shadow-lgrounded-2xl shadow-lg ">
             <div class="w-max flex items-center">
               
               <svg class="w-12 h-12 mr-3" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -161,7 +161,7 @@
               </svg>
 
               <div class="text-white">
-                <p class="font-medium text-xl" >Доставка</p>
+                <p class="font-medium text-xl">Доставка</p>
                 <span class="text-base">г. Казань, Декабристов 20</span>
               </div>
 
@@ -174,16 +174,16 @@
               </div>
 
             </div>
-          </a>
+          </button>
 
           <!-- Скидочный купон -->
           <div class="h-max mt-5 p-5 bg-secondary rounded-2xl shadow-lg">
             <div class="text-3xl font-bold text-white">Скидочный купон:</div>
-            <form action="">
-              <input class="w-full h-10 my-3 bg-secondary border-b border-muted text-accent" placeholder="Введите код" type="text" name="..." id="...">
+            <form action="" method="POST">
 
-              <button class=" w-full mt-3 py-3.5 bg-white rounded-2xl text-center text-lg font-medium" id="..."> Применить</button>
-              
+              <input class="w-full h-10 my-3 bg-secondary border-b border-muted text-accent" placeholder="Введите код" type="text" id="discountCode" name="discountCode" required>
+
+              <input class=" w-full mt-1 py-3.5 bg-white rounded-2xl text-center text-lg font-medium" placeholder="Применить" type="submit" value="Применить">      
               <!-- Применён -->
               <div class="w-full hidden justify-center items-center mt-3 py-3.5 text-white text-center text-lg font-medium">
                 <svg class="w-5 h-5" viewBox="0 0 30 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -196,7 +196,7 @@
           </div>
 
           <!-- Доставка г. Казань, Декабристов 20-->
-          <button id="btn" class="lg:hidden xl:flex w-full h-max  mt-5 p-3.5 flex justify-between bg-secondary rounded-2xl shadow-lgrounded-2xl shadow-lg ">
+          <button id="btn" class="lg:hidden xl:flex w-full h-max mt-5 p-3.5 flex justify-between bg-secondary rounded-2xl shadow-lgrounded-2xl shadow-lg ">
             <div class="flex items-center">
               <svg class="w-12 h-12 mr-3" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M41.875 14.4584C41.875 15.5834 41.2708 16.6042 40.3125 17.125L36.6875 19.0834L33.6042 20.7292L27.2083 24.1875C26.5208 24.5625 25.7708 24.75 25 24.75C24.2292 24.75 23.4792 24.5625 22.7917 24.1875L9.6875 17.125C8.72917 16.6042 8.125 15.5834 8.125 14.4584C8.125 13.3334 8.72917 12.3125 9.6875 11.7917L13.7917 9.58335L17.0625 7.81252L22.7917 4.72919C24.1667 3.97919 25.8333 3.97919 27.2083 4.72919L40.3125 11.7917C41.2708 12.3125 41.875 13.3334 41.875 14.4584Z" fill="white"/>
@@ -205,7 +205,7 @@
                 <path d="M36.6868 19.0833L33.6035 20.7292L13.791 9.58333L17.0618 7.8125L36.1869 18.6042C36.3952 18.7292 36.5618 18.8958 36.6868 19.0833Z" fill="white"/>
                 <path d="M36.9785 22.8542V27.5834C36.9785 28.4375 36.2702 29.1459 35.416 29.1459C34.5618 29.1459 33.8535 28.4375 33.8535 27.5834V24.4167L36.9785 22.8542Z" fill="white"/>
               </svg>
-              <div class="text-white ">
+              <div class="text-white pr-10">
                 <p class="font-medium text-2xl" >Доставка</p>
                 <span class="text-lg">г. Казань, Декабристов 20</span>
 
@@ -286,8 +286,19 @@
             <!-- Скидочный купон -->
             <div class=" lg:hidden h-max mt-5 p-5 bg-secondary rounded-2xl shadow-lg">
               <div class="text-2xl sm:text-3xl font-bold text-white">Скидочный купон:</div>
-              <form action="">
-                <input class="w-full h-10 my-3 bg-secondary border-b border-muted text-accent" placeholder="Введите код" type="text" name="..." id="...">
+              <form action="" method="POST">
+
+                <input class="w-full h-10 my-3 bg-secondary border-b border-muted text-accent" placeholder="Введите код" type="text" id="discountCode" name="discountCode" required>
+  
+                <input class=" w-full mt-1 py-3.5 bg-white rounded-2xl text-center text-lg font-medium" placeholder="Применить" type="submit" value="Применить">      
+                <!-- Применён -->
+                <div class="w-full hidden justify-center items-center mt-3 py-3.5 text-white text-center text-lg font-medium">
+                  <svg class="w-5 h-5" viewBox="0 0 30 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.15234 11.4813L10.5598 18.8887L26.856 2.59241" stroke="white" stroke-width="4.44444" stroke-linecap="round"/>
+                  </svg>
+                  <span class="ml-2" >Применён</span>
+                </div>
+  
               </form>
             </div>
 

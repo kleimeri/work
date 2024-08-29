@@ -1572,6 +1572,10 @@ body {
   padding-left: 0.75rem;
 }
 
+.pr-10 {
+  padding-right: 2.5rem;
+}
+
 .pr-16 {
   padding-right: 4rem;
 }
@@ -1735,12 +1739,6 @@ body {
   transition-duration: 150ms;
 }
 
-.transition-\[1s\] {
-  transition-property: 1s;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -1784,46 +1782,6 @@ html {
 #nprogress .spinner-icon {
   border-top-color: hsl(var(--primary)) !important;
   border-left-color: hsl(var(--primary)) !important;
-}
-
-@media (min-width: 1280px) {
-  .xl\:container {
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 1rem;
-    padding-left: 1rem;
-  }
-
-  @media (min-width: 640px) {
-    .xl\:container {
-      max-width: 640px;
-    }
-  }
-
-  @media (min-width: 768px) {
-    .xl\:container {
-      max-width: 768px;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .xl\:container {
-      max-width: 1024px;
-    }
-  }
-
-  @media (min-width: 1280px) {
-    .xl\:container {
-      max-width: 1280px;
-    }
-  }
-
-  @media (min-width: 1536px) {
-    .xl\:container {
-      max-width: 1536px;
-    }
-  }
 }
 
 @media (min-width: 1420px) {
