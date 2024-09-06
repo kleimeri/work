@@ -1,0 +1,38 @@
+:root {
+  --primary-color: #fb8700;
+  --primary-dark-color: #fe640e;
+  --secondary-color: #357aff;
+  --foreground-color: #333333;
+  --background-color: #fdfdfd;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --shadow-primary-color: rgba(254, 100, 14, 0.2);
+  --black-color: #000;
+  --error-color: #ef4444;
+  --background-light-color: #202020;
+  --white-color: #fff;
+  --gray-color: #ababab;
+  --gray-light-color: #e8e8e8;
+  --gray-dark-color: #575757;
+  --blue-color: #1badffd4;
+  --warning-color: #bd0707;
+  --success-color: #009c35;
+  --white-gradient: linear-gradient(318.53deg, #dbe6f6 -2.61%, #fffcf9 97.19%);
+  --gold-gradient: linear-gradient(
+    90deg,
+    #fd8d1b 0%,
+    #ffe090 58%,
+    #fe5d0b 100%
+  );
+  --primary-gradient: linear-gradient(to right, #fd8d1b, #fe5d0b);
+  --gray-gradient: linear-gradient(
+    to right,
+    rgba(223, 223, 223, 0.4) 0%,
+    rgba(115, 115, 115, 0.4) 100%
+  );
+}
+
+.dark,
+[data-theme=dark] {
+  --foreground-color: white;
+  --background-color: #101010;
+}
