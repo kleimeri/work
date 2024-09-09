@@ -1165,8 +1165,8 @@ video {
 }
 
 @media (min-width: 1024px) {
-  .lg\:mb-2 {
-    margin-bottom: 0.5rem;
+  .lg\:mb-1 {
+    margin-bottom: 0.25rem;
   }
 
   .lg\:mt-0 {
