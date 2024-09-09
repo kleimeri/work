@@ -1159,6 +1159,10 @@ video {
     line-height: 43px;
   }
 
+  .md\:leading-\[45px\] {
+    line-height: 45px;
+  }
+
   .md\:leading-\[60px\] {
     line-height: 60px;
   }
