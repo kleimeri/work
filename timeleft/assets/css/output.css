@@ -760,12 +760,12 @@ video {
   max-width: 400px;
 }
 
-.max-w-\[550px\] {
-  max-width: 550px;
-}
-
 .max-w-\[600px\] {
   max-width: 600px;
+}
+
+.max-w-\[630px\] {
+  max-width: 630px;
 }
 
 .max-w-\[800px\] {
@@ -1027,6 +1027,10 @@ video {
   letter-spacing: -0.03em;
 }
 
+.tracking-\[0\.03em\] {
+  letter-spacing: 0.03em;
+}
+
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -1080,6 +1084,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .md\:mb-10 {
     margin-bottom: 2.5rem;
   }
