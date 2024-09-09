@@ -1019,8 +1019,8 @@ video {
   line-height: 40px;
 }
 
-.tracking-\[0\.03em\] {
-  letter-spacing: 0.03em;
+.-tracking-\[0\.03em\] {
+  letter-spacing: -0.03em;
 }
 
 .text-black {
