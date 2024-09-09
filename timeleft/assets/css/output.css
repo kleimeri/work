@@ -760,6 +760,10 @@ video {
   max-width: 400px;
 }
 
+.max-w-\[550px\] {
+  max-width: 550px;
+}
+
 .max-w-\[600px\] {
   max-width: 600px;
 }
@@ -1019,8 +1023,8 @@ video {
   line-height: 40px;
 }
 
-.tracking-\[0\.03em\] {
-  letter-spacing: 0.03em;
+.-tracking-\[0\.03em\] {
+  letter-spacing: -0.03em;
 }
 
 .text-black {
