@@ -1023,6 +1023,10 @@ video {
   line-height: 2.25rem;
 }
 
+.leading-\[38px\] {
+  line-height: 38px;
+}
+
 .leading-\[40px\] {
   line-height: 40px;
 }
@@ -1157,6 +1161,10 @@ video {
 
   .md\:text-\[64px\] {
     font-size: 64px;
+  }
+
+  .md\:leading-\[43px\] {
+    line-height: 43px;
   }
 
   .md\:leading-\[60px\] {
