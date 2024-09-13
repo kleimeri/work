@@ -595,6 +595,11 @@ video {
   margin-right: 0.25rem;
 }
 
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -622,8 +627,16 @@ video {
   margin-top: 0.5rem;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
 }
 
 .mt-6 {
@@ -644,6 +657,10 @@ video {
 
 .h-14 {
   height: 3.5rem;
+}
+
+.h-16 {
+  height: 4rem;
 }
 
 .h-24 {
@@ -683,6 +700,11 @@ video {
   height: max-content;
 }
 
+.max-h-max {
+  max-height: -moz-max-content;
+  max-height: max-content;
+}
+
 .min-h-\[340px\] {
   min-height: 340px;
 }
@@ -719,6 +741,10 @@ video {
 .max-w-max {
   max-width: -moz-max-content;
   max-width: max-content;
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .flex-wrap {
@@ -763,6 +789,10 @@ video {
 
 .border {
   border-width: 1px;
+}
+
+.border-gray {
+  border-color: rgba(var(--gray-color));
 }
 
 .border-secondary {
@@ -824,6 +854,11 @@ video {
   padding-right: 1.25rem;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -839,6 +874,11 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -851,6 +891,10 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.font-\[\'Avenir\'\] {
+  font-family: 'Avenir';
 }
 
 .font-\[\'Hind\'\] {
@@ -881,6 +925,11 @@ video {
 .\!text-xl {
   font-size: 1.25rem !important;
   line-height: 1.75rem !important;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-6xl {
@@ -948,6 +997,22 @@ video {
   opacity: 0.9;
 }
 
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.hover\:bg-primary:hover {
+  background-color: rgba(var(--primary-color));
+}
+
+.hover\:text-secondary-dark:hover {
+  color: var(--secondary-dark-color);
+}
+
 @media (min-width: 576px) {
   .sm\:ml-7 {
     margin-left: 1.75rem;
@@ -1001,6 +1066,14 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:w-1\/3 {
+    width: 33.333333%;
+  }
+
   .lg\:bg-cover {
     background-size: cover;
   }
